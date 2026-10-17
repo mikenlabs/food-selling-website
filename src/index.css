@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+  body {
+    @apply font-inter bg-cream-50 text-gray-800 antialiased;
+  }
+
+  .bg-cream-50 {
+    background-color: #fdfaf7;
+  }
+
+  .bg-primary-50 {
+    background-color: #fff7ed;
+  }
+
+  .bg-primary-100 {
+    background-color: #ffedd5;
+  }
+
+  .bg-primary-500 {
+    background-color: #f97316;
+  }
+
+  .text-primary-600 {
+    color: #ea580c;
+  }
+
+  .text-primary-500 {
+    color: #f97316;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+
+  .btn-outline {
+    @apply bg-white text-primary-600 border border-primary-500 hover:bg-primary-50;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

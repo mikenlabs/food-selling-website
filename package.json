@@ -1,0 +1,24 @@
+{
+  "name": "food-selling-website",
+  "version": "1.0.0",
+  "description": "A food selling and marketing website built with Vue 3 and Tailwind CSS",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "pinia": "^2.1.0",
+    "@supabase/supabase-js": "^2.32.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.0"
+  }
+}
